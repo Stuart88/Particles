@@ -1,7 +1,8 @@
 //#include "functions.h"
 
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <iostream>
+#include <cmath>
 
 //initialisation parameters
 float gravity = 0;
@@ -287,7 +288,7 @@ int main()
 
 	//create balls and initialise positions
 	sf::Texture ballsTexture;
-	ballsTexture.loadFromFile("images/bulletSprites.png");
+	ballsTexture.loadFromFile("bulletSprites.png");
 	sf::Sprite ballSprites[101];
 	for (int i = 0; i < 101; ++i)
 	{
